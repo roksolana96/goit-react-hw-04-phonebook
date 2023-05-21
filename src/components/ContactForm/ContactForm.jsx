@@ -10,11 +10,14 @@ export const ContactForm = ({ add, contacts }) => {
 
   const handleChangeName = e => {
     setUser({ ...user, name: e.currentTarget.value });
+//     const { name, value } = e.currentTarget;
+//     this.setState({ [name]: value });
   };
 
   const handleChangeNumber = e => {
     setUser({ ...user, number: e.currentTarget.value });
   };
+
 
   const handleFormSubmit = e => {
     e.preventDefault();
